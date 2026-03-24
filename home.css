@@ -1,0 +1,154 @@
+/*  global styling */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+#head{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+      color:  #4e4e4e;
+      transition: 0.2s;
+}
+a:hover{
+    color: gray;
+}
+a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(69, 235, 235) ;
+    display: block;
+    transition: 0.2s linear;
+}
+a:hover::after{
+    width: 100%;
+}
+.navie{
+    width: 90%;
+    min-height: 9vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    margin: auto;
+
+
+
+}
+.list{
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+    
+}
+.logo{
+    font-size: 600;
+    color: #4e4e4e;
+    margin-right: auto;
+}
+.but{
+    border: none;
+    border-radius: 6px;
+    height:2.5rem ;
+    width: 9%;
+    background-color: #a1a0a0;
+    color:  #4e4e4e;
+}
+.but1 a:hover{
+    background-color: gray;
+}
+/* main */
+#parent{
+    width: 100%;
+    min-height: 55vh;
+    background-color: #747474;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.title h1{
+    font-size: 1300;
+    font-family: sans-serif;
+    span{
+        color: rgb(69, 235, 235);
+    }
+}
+.par{
+    width: 600px;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+/* cards */
+#mainbox{
+    width: 90%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+   
+}
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+    flex: 1 1 4rem;
+    position: relative;
+    i{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 100px;
+    }
+}
+.card1{
+    background-color: #a1a0a0;
+    
+}
+
+.card2{
+    background-color: bisque;
+}
+.card3{
+    background-color: blue;
+}
+/* footer */
+#foot{
+    width: 100%;
+    min-height: 50vh;
+    background-color: gray;
+}
+.child{
+    display: flex;
+    padding: 5rem 0rem;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.box{
+  
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    
+    }
+    p,li{
+        list-style: none;
+        font-size: 12px;
+    }
+   
+}

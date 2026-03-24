@@ -1,0 +1,40 @@
+/* global styling */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#form_cont{
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(239, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+    }
+}
+.inputs{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+.inputs label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
